@@ -1,3 +1,11 @@
+.DS_Store
+
+# Build directories
+dist
+lib
+es
+build
+
 # Logs
 logs
 *.log
@@ -56,4 +64,3 @@ typings/
 
 # dotenv environment variables file
 .env
-
