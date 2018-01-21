@@ -1,4 +1,4 @@
-import DrupalSerializerClass, { DrupalJSONAPISource } from '../src/index.js';
+import DrupalJSONAPISource, { DrupalSerializerClass } from '../src/index.js';
 import JSONAPISource, { JSONAPISerializer } from '@orbit/jsonapi';
 
 import schema from './mocks/schema';

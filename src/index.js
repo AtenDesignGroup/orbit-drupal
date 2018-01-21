@@ -1,6 +1,6 @@
 import JSONAPISource, { JSONAPISerializer } from '@orbit/jsonapi';
 
-export default class DrupalSerializerClass extends JSONAPISerializer {
+export class DrupalSerializerClass extends JSONAPISerializer {
 
   // eslint-disable-next-line class-methods-use-this
   resourceRelationship(type, relationship) {
@@ -28,7 +28,7 @@ export default class DrupalSerializerClass extends JSONAPISerializer {
   }
 }
 
-export class DrupalJSONAPISource extends JSONAPISource {
+export default class DrupalJSONAPISource extends JSONAPISource {
   constructor(settings) {
     super(Object.assign({}, settings, {
       SerializerClass: DrupalSerializerClass
